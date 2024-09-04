@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-else.css">
+</head>
+<body>
+    <nav>
+        <a class="b" href="index.html">home</a>
+        <a class="b" href="games.html">video games</a> 
+        <a class="b" href="map.html">visited countries</a>
+    </nav>
+
+    <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+<div id="mapdiv" style="width: 1500px; height: 660px;"></div>
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv",{
+type: "map",
+theme: "dark",
+projection: "mercator",
+panEventsEnabled : true,
+backgroundColor : "#535364",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : true
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : false,
+areas :
+[
+	{
+		"id": "BG",
+		"showAsSelected": true
+	},
+	{
+		"id": "CZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "DE",
+		"showAsSelected": true
+	},
+	{
+		"id": "GR",
+		"showAsSelected": true
+	},
+	{
+		"id": "IT",
+		"showAsSelected": true
+	},
+	{
+		"id": "NL",
+		"showAsSelected": true
+	},
+	{
+		"id": "VA",
+		"showAsSelected": true
+	},
+	{
+		"id": "IL",
+		"showAsSelected": true
+	},
+	{
+		"id": "LB",
+		"showAsSelected": true
+	},
+	{
+		"id": "PS",
+		"showAsSelected": true
+	},
+	{
+		"id": "CH",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#B4B4B7",
+colorSolid : "#14B339",
+selectedColor : "#14B339",
+outlineColor : "#666666",
+rollOverColor : "#9EC2F7",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+</body>
+</html>
+
+
