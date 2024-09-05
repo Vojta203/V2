@@ -1,7 +1,47 @@
 a{
+    display: inline-block;
+    padding: 0.6% 1.2%;
+    font-size: 135%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4B0082;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 1.4%;
+    margin-bottom: 0.75%;
+}
+
+a:hover {
+    background-color: #7910c5;
+}
+
+a:active {
+    background-color: #7910c5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+div{
+    width: auto;
+    height: 650px;
+}
+
+iframe{
+    width: 100%;
+    min-height: 625px;
+}
+
+
+/*
+a{
     text-decoration: none;
     width: 300px;
     font-size: 25px;
     margin-left: 50px ;
     color: #4B0082;
 }
+style="width: 1500px; height: 660px";
